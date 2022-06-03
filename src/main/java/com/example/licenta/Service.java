@@ -1,9 +1,6 @@
 package com.example.licenta;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-
-import java.util.LinkedList;
 import java.util.List;
 
 @org.springframework.stereotype.Service

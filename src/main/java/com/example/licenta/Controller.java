@@ -26,7 +26,7 @@ public class Controller {
     public ResponseEntity updateTeam(@RequestBody TeamsData team) {
         service.updateTeam(team);
 
-        return ResponseEntity.status(HttpStatus.CREATED)
+        return ResponseEntity.status(HttpStatus.OK)
                 .body("Updated");
     }
 
@@ -34,7 +34,7 @@ public class Controller {
     public ResponseEntity deletePlayer(@PathVariable String position, @PathVariable Long age) {
         service.deletePlayer(position, age);
 
-        return ResponseEntity.status(HttpStatus.GONE)
+        return ResponseEntity.status(HttpStatus.OK)
                 .body("Deleted");
     }
 
